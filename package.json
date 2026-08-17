@@ -1,0 +1,42 @@
+{
+  "name": "dsh-plugin-task-panel",
+  "version": "1.0.0",
+  "description": "Task & Context Summary Panel for DeepSeek Harness (DSH)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "task-panel",
+    "context-summary"
+  ],
+  "author": "xiaogu619520",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaogu619520/dsh-plugin-task-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaogu619520/dsh-plugin-task-panel/issues"
+  },
+  "homepage": "https://github.com/xiaogu619520/dsh-plugin-task-panel#readme",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
